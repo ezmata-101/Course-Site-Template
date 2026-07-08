@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>COURSE_TITLE</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="layout">
+    <aside>
+      <div class="sidewrap">
+        <div class="sidehead">
+          <span class="sidetitle">Directories</span>
+          <button id="toggleTreeBtn" type="button" class="button-common">Hide tree</button>
+        </div>
+        <nav id="dirTree" class="tree" aria-label="Directory tree"></nav>
+      </div>
+    </aside>
+
+    <main>
+      <div class="wrap">
+        <header>
+          <h1><a href="index.html">Course Page</a></h1>
+          <nav id="breadcrumbs" class="crumbs">/</nav>
+        </header>
+
+        <div class="toolbar">
+          <!-- <button id="upBtn">▴ Up</button> -->
+          <input type="search" id="search" placeholder="Search ... " />
+          <button id="themeBtn" class="button-common">Dark/Light</button>
+        </div>
+
+        <section id="htmlcontent" class="htmlcontent">
+          <!-- html section will be added here -->
+        </section>
+
+        <section id="announcements" class="announcements">
+          <table>
+            <thead>
+              <tr>
+                <th class="name" colspan="2" id="announcementsHeader">Announcements, Class Notes & Misc</th>
+              </tr>
+            </thead>
+            <tbody id="announcementRows">
+              <!-- announcements will be added here -->
+            </tbody>
+          </table>
+        </section>
+
+        <div style="height: 20px;"></div>
+
+        <table id="materials" class="filetable">
+          <thead>
+            <!-- <tr><th class="name">Name</th><th class="type">Type</th><th class="path">Path</th></tr> -->
+            <tr>
+              <th class="name">Materials</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <script src="filescatalog.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
